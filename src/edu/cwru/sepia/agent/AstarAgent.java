@@ -209,16 +209,6 @@ public class AstarAgent extends Agent {
     }
 
     /**
-     * You will implement this method.
-     *
-     * This method should return true when the path needs to be replanned
-     * and false otherwise. This will be necessary on the dynamic map where the
-     * footman will move to block your unit.
-     * 
-     * You can check the position of the enemy footman with the following code:
-     * state.getUnit(enemyFootmanID).getXPosition() or .getYPosition().
-     * 
-     * There are more examples of getting the positions of objects in SEPIA in the findPath method.
      *
      * @param state
      * @param history
