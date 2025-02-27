@@ -1,14 +1,19 @@
-# CWRU-SEPIA
+# CWRU-SEPIA: AI Agent Implementations for SEPIA
 
-CWRU-SEPIA is a project focused on implementing AI agents in a maze/combat game environment. The agents are designed to navigate through mazes, engage in combat scenarios, and demonstrate intelligent decision-making capabilities.
+CWRU-SEPIA is a project focused on implementing AI agents within the **SEPIA** platform, a simulation environment for resource collection, maze navigation, and strategic planning games. SEPIA was developed by researchers at **Case Western Reserve University (CWRU)** and provides a framework for testing AI decision-making in various game scenarios. More details about SEPIA can be found [here](http://engr.case.edu/ray_soumya/Sepia/html/index.html).
+
+I implemented custom AI agent behaviors designed to operate within SEPIA, focusing on decision-making logic for agents in various scenarios. The logic for these agents, which includes pathfinding, adversarial game strategies, and resource collection planning, has been developed and implemented entirely within the src/ folder. These agents demonstrate various AI techniques applied to different in-game challenges.
 
 ## Overview
 
-The project incorporates various AI techniques to create efficient and effective agents capable of tackling challenges in the maze/combat game. It includes implementations of heuristic search algorithms, adversarial search strategies, and state-space planning methodologies to enable the agents to navigate the environment, evade obstacles, engage in combat, and optimize resource collection.
+The project incorporates various AI techniques to create efficient and effective agents capable of tackling challenges in the SEPIA environment. It includes implementations of heuristic search algorithms, adversarial search strategies, and state-space planning methodologies to enable the agents to navigate the environment, evade obstacles, engage in combat, and optimize resource collection.
 
 ## Folder Structure
 
-The source code of the agents is organized inside the `src/` folder.
+The source code of the AI agents is organized inside the `src/` folder. This contains implementations of:
+- **Heuristic Search and A* Pathfinding** for maze navigation.
+- **Minimax with Alpha-Beta Pruning** for combat scenarios.
+- **State-Space Planning** for resource management and collection tasks.
 
 ## Implementation Details
 
@@ -32,4 +37,6 @@ The source code of the agents is organized inside the `src/` folder.
   - The agent extends its capabilities to **multi-agent coordination**, allowing for parallel execution of harvesting and depositing actions.
   - The **BuildPeasant** action introduces additional complexity by enabling the recruitment of new peasants to increase resource collection speed.
   - The agent dynamically schedules actions to optimize performance, balancing the immediate cost of hiring new peasants against long-term efficiency gains.
+
+
 
